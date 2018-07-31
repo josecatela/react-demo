@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
 class About extends Component {
-    render(){
+    render() {
         return (
             <div>All about glassowl.io</div>
-        )
+        );
     }
 }
 

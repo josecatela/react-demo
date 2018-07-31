@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 import NewsItemListing from '../presentation/NewsItemListing';
 
 class News extends Component {

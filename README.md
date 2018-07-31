@@ -1,1 +1,19 @@
-https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
+# Setup
+From clean git clone:
+```sh
+cd client
+npm install .
+npm start
+```
+
+# Tutorial
+http://www.darrenbeck.co.uk/nodejs/react/reacttutorial-part2/
+
+# Additions
+
+## ESLint
+From working build per tutorial (through step 2)
+```sh
+cd client
+npm install eslint --save-dev
+```
