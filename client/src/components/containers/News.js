@@ -6,13 +6,6 @@ import { fetchNews } from '../../actions/actions';
 import NewsItemListing from '../presentation/NewsItemListing';
 
 class News extends Component {
-    static get propTypes() {
-        return {
-            dispatch: PropTypes.func,
-            news: PropTypes.arrayOf(PropTypes.shape(NewsItemListing.propTypes)),
-        };
-    }
-    
     componentDidMount() {
         var fakeNews = [{
             id: '1',
@@ -40,6 +33,11 @@ class News extends Component {
         )
     }
 }
+
+News.propTypes = {
+    dispatch: PropTypes.func,
+    news: PropTypes.arrayOf(PropTypes.shape(NewsItemListing.propTypes)),
+};
 
 const mapStateToProps = state => {
     return {
