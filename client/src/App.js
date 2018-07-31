@@ -1,21 +1,28 @@
+import { Provider } from 'react-redux';
 import React, {Component} from 'react';
-import './App.css';
 import {Route, BrowserRouter} from 'react-router-dom';
-import Home from './components/layouts/Home';
-import About from './components/layouts/About';
 
+import './App.css';
+import NewsArticle from './components/containers/NewsArticle';
+import About from './components/layouts/About';
+import Home from './components/layouts/Home';
+import Layout from './components/layouts/Layout';
+import store from './stores/store';
 
 class App extends Component {
-  render() {
-    return (
-        <BrowserRouter>
-            <div>
-                <Route exact path="/" component={Home} />
-                <Route path="/about" component={About} />
-            </div>
-        </BrowserRouter>
-       );
-  }
+    render() {
+        return (
+            <Provider store={store}>
+                <BrowserRouter>
+                    <Layout>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/about" component={About} />
+                        <Route path="/news/:id" component={NewsArticle} />
+                    </Layout>
+                </BrowserRouter>
+            </Provider>
+        );
+    }
 }
 
 export default App;

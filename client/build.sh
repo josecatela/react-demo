@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash -e
 
-npm run lint     || ( echo "Failed: lint"  ; exit 1 )
-CI=true npm test || ( echo "Failed: test"  ; exit 1 )
-npm run build    || ( echo "Failed: build" ; exit 1 )
+npm run lint
+CI=true npm test
+npm run build
 echo "Success."
