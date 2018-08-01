@@ -16,11 +16,11 @@ function newsReceived(news) {
     }
 }
 
-function newsItemLoading() {
-    return {
-        type: actionTypes.NEWSITEM_LOADING
-    }
-}
+// function newsItemLoading() {
+//     return {
+//         type: actionTypes.NEWSITEM_LOADING
+//     }
+// }
 
 export function fetchNews(){
     return dispatch => {
@@ -41,7 +41,7 @@ export function fetchNewsItem(id){
 }
 
 export function submitNewsStory(data){
-    return dispatch => {
+    return () => {
         return fetch('/news/', { 
             method: 'POST', 
             headers: {

@@ -1,6 +1,7 @@
 {
-  "name": "client",
+  "name": "react-demo-client",
   "version": "0.1.0",
+  "homepage": "http://localhost:3000/",
   "private": true,
   "dependencies": {
     "ajv": "^6.5.2",

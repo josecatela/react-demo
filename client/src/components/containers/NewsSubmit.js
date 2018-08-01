@@ -1,8 +1,8 @@
+import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {withRouter} from "react-router-dom";
 
-import NewsItemDetail from '../presentation/NewsItemDetail';
 import {submitNewsStory} from '../../actions/actions';
 
 class NewsSubmit extends Component {
@@ -11,8 +11,7 @@ class NewsSubmit extends Component {
         super();
 
         this.state = {
-            submission:{
-            }
+            submission: {}
         };
     }
 
@@ -50,9 +49,16 @@ class NewsSubmit extends Component {
     }
 }
 
-const mapStateToProps = state => {
+NewsSubmit.propTypes = {
+    dispatch: PropTypes.func.isRequired,
+    history: PropTypes.shape({
+        push: PropTypes.func.isRequired
+    }),
+}
+
+const mapStateToProps = (/*state*/) => {
     return {
-    }
+    };
 }
 
 export default withRouter(connect(mapStateToProps)(NewsSubmit));
