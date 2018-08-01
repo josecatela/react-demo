@@ -14,7 +14,7 @@ class NewsArticle extends Component {
     render(){
         return (
             <div>
-                <h2>News Story</h2>
+                <h3>News Story</h3>
                 <ul>
                     { !this.props.newsItemLoading ? <NewsItemDetail data={this.props.newsItem} /> : <div>Loading</div> }
                 </ul>

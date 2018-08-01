@@ -5,10 +5,8 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div> Welcome to glassowl.io</div>
-                <div>
-                    <News />
-                </div>
+                <h3>Welcome to glassowl.io</h3>
+                <News />
             </div>
         );
     }

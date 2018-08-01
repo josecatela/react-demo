@@ -16,7 +16,7 @@ class News extends Component {
         });
 
         return (
-            <div>
+            <div className='News'>
                 <h2>News Items</h2>
                 { this.props.news.length > 0 ? <ul>{newsItems}</ul> : <div>None</div> }
             </div>
