@@ -4,6 +4,7 @@ import {Route, BrowserRouter} from 'react-router-dom';
 
 import './App.css';
 import NewsArticle from './components/containers/NewsArticle';
+import NewsSubmit from './components/containers/NewsSubmit';
 import About from './components/layouts/About';
 import Home from './components/layouts/Home';
 import Layout from './components/layouts/Layout';
@@ -18,6 +19,7 @@ class App extends Component {
                         <Route exact path="/" component={Home} />
                         <Route path="/about" component={About} />
                         <Route path="/news/:id" component={NewsArticle} />
+                        <Route path='/submit' component={NewsSubmit}/>
                     </Layout>
                 </BrowserRouter>
             </Provider>
