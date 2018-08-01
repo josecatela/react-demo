@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {withRouter} from "react-router-dom";
 
-import {submitNewsStory} from '../../actions/actions';
+import {submitNewsStory} from '../../actions/newsActions';
 
 class NewsSubmit extends Component {
 

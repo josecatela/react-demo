@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component} from 'react';
 import { connect } from 'react-redux';
 
-import { fetchNews } from '../../actions/actions';
+import { fetchNews } from '../../actions/newsActions';
 import NewsItemListing from '../presentation/NewsItemListing';
 
 class News extends Component {

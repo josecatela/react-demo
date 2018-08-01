@@ -3,7 +3,7 @@ import React, { Component} from 'react';
 import { connect } from 'react-redux'
 
 import NewsItemDetail from '../presentation/NewsItemDetail';
-import { fetchNewsItem } from '../../actions/actions';
+import { fetchNewsItem } from '../../actions/newsActions';
 
 class NewsArticle extends Component {
 

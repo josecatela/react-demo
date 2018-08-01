@@ -5,7 +5,9 @@ const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
 
+const authCheckMiddleware = require('./middleware/authCheck');
 const routes = require('./routes/index');
+const authRoute = require('./routes/auth');
 const newsRoute = require('./routes/news');
 
 require('dotenv').config()
@@ -31,6 +33,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/', routes);
 
+app.use('/user', authRoute);
+
+app.post('/news', authCheckMiddleware);
 app.use('/news', newsRoute);
 
 app.listen(PORT, function () {
