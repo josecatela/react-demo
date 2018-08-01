@@ -16,12 +16,6 @@ function newsReceived(news) {
     }
 }
 
-// function newsItemLoading() {
-//     return {
-//         type: actionTypes.NEWSITEM_LOADING
-//     }
-// }
-
 export function fetchNews(){
     return dispatch => {
         return fetch(`/news`)

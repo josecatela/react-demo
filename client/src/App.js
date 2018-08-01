@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import {Route, BrowserRouter} from 'react-router-dom';
 
 import './App.css';
+import Authentication from './components/containers/Authentication';
 import NewsArticle from './components/containers/NewsArticle';
 import NewsSubmit from './components/containers/NewsSubmit';
 import About from './components/layouts/About';
@@ -20,6 +21,7 @@ class App extends Component {
                         <Route path="/about" component={About} />
                         <Route path="/news/:id" component={NewsArticle} />
                         <Route path='/submit' component={NewsSubmit}/>
+                        <Route path='/user' component={Authentication}/>
                     </Layout>
                 </BrowserRouter>
             </Provider>

@@ -4,7 +4,7 @@ import News from '../containers/News';
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className='Home'>
                 <h3>Welcome to glassowl.io</h3>
                 <News />
             </div>

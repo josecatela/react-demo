@@ -1,24 +1,3 @@
-
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #222;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:visited {
-  color: #C00;
-}
-
-a:hover {
-  color: #F44;
-  text-decoration: underline;
-}
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -28,6 +7,16 @@ a:hover {
 
 .Layout {
   padding: 20px;
+}
+
+.Layout nav {
+  width: 100%;
+  text-align: center;
+  margin: 1em;
+}
+
+.Layout nav span {
+  margin: 1em;
 }
 
 @keyframes App-logo-spin {
